@@ -1,0 +1,42 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="%{BKY_XBOT_SERVO_CONTROL_CATEGORY}" colour="#b077d1" icon="gesture">
+    <block type="configure_servo">
+      <value name="initial_angle">
+        <shadow type="math_number">
+          <field name="NUM">90</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="servo_current_position"></block>
+
+    <block type="set_servo">
+      <value name="angle">
+        <shadow type="math_number">
+          <field name="NUM">90</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="servo_position">
+      <value name="angle">
+        <shadow type="math_number">
+          <field name="NUM">30</field>
+        </shadow>
+      </value>
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">70</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="servo_move">
+      <value name="angle">
+        <shadow type="math_number">
+          <field name="NUM">5</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+</xml>

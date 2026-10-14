@@ -1,0 +1,16 @@
+{
+    "name": "SERVO CONTROL",
+    "description": "Các khối điều khiển động cơ servo góc cho robot",
+    "libs": [
+        "xbot_servo_control.py"
+    ],
+    "blocks": [
+        "definition.js"
+    ],
+    "toolbox": "toolbox.xml",
+    "languages": {
+        "en": "languages/en.js",
+        "vi": "languages/vi.js"
+    },
+    "poster": "poster.png"
+}
