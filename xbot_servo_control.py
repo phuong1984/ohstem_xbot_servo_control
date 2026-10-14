@@ -20,7 +20,7 @@ def configure_servo(pin, max_angle, initial_angle=90):
     if max_angle not in (180, 270, 360):
         raise ValueError("max_angle must be 180, 270, or 360")
     servo_max_angles[pin] = max_angle
-    servo_positions[pin] = _clamp(initial_angle, 0, max_angle)
+    set_servo(pin, initial_angle)
 
 
 def _max_angle(pin):

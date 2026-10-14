@@ -1,6 +1,6 @@
 Blockly.Msg.XBOT_SERVO_CONTROL_CATEGORY = 'SERVO CONTROL';
 Blockly.Msg.XBOT_SERVO_CONTROL_CONFIGURE_SERVO_MESSAGE = 'configure servo %1 as %2 degrees, initial angle %3 degrees';
-Blockly.Msg.XBOT_SERVO_CONTROL_CONFIGURE_SERVO_TOOLTIP = 'Select the maximum and initial angles for the servo on this port. The initial angle defaults to 90 degrees.';
+Blockly.Msg.XBOT_SERVO_CONTROL_CONFIGURE_SERVO_TOOLTIP = 'Select the maximum and initial angles for the servo on this port; the servo will move to the initial angle. The initial angle defaults to 90 degrees.';
 Blockly.Msg.XBOT_SERVO_CONTROL_SET_SERVO_MESSAGE = 'set servo %1 to angle %2 degrees';
 Blockly.Msg.XBOT_SERVO_CONTROL_SET_SERVO_TOOLTIP = 'Set the servo directly to an angle from 0 to its configured maximum angle.';
 Blockly.Msg.XBOT_SERVO_CONTROL_SERVO_POSITION_MESSAGE = 'move servo %1 to %2 degrees at speed %3 (0-100)';

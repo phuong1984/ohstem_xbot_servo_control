@@ -1,6 +1,6 @@
 Blockly.Msg.XBOT_SERVO_CONTROL_CATEGORY = 'ĐIỀU KHIỂN SERVO';
 Blockly.Msg.XBOT_SERVO_CONTROL_CONFIGURE_SERVO_MESSAGE = 'cấu hình servo %1 loại %2 độ, góc khởi tạo %3 độ';
-Blockly.Msg.XBOT_SERVO_CONTROL_CONFIGURE_SERVO_TOOLTIP = 'Chọn góc quay tối đa và góc khởi tạo của servo tại cổng này. Góc khởi tạo mặc định là 90 độ.';
+Blockly.Msg.XBOT_SERVO_CONTROL_CONFIGURE_SERVO_TOOLTIP = 'Chọn góc quay tối đa và góc khởi tạo của servo tại cổng này; servo sẽ quay đến góc khởi tạo. Góc khởi tạo mặc định là 90 độ.';
 Blockly.Msg.XBOT_SERVO_CONTROL_SET_SERVO_MESSAGE = 'đặt servo %1 tới góc %2 độ';
 Blockly.Msg.XBOT_SERVO_CONTROL_SET_SERVO_TOOLTIP = 'Đặt trực tiếp servo tới góc từ 0 đến góc tối đa đã cấu hình.';
 Blockly.Msg.XBOT_SERVO_CONTROL_SERVO_POSITION_MESSAGE = 'servo %1 quay tới góc %2 độ với tốc độ %3 (0-100)';
