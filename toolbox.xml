@@ -10,14 +10,6 @@
 
     <block type="servo_current_position"></block>
 
-    <block type="set_servo">
-      <value name="angle">
-        <shadow type="math_number">
-          <field name="NUM">90</field>
-        </shadow>
-      </value>
-    </block>
-
     <block type="servo_position">
       <value name="angle">
         <shadow type="math_number">
@@ -35,6 +27,11 @@
       <value name="angle">
         <shadow type="math_number">
           <field name="NUM">5</field>
+        </shadow>
+      </value>
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">70</field>
         </shadow>
       </value>
     </block>

@@ -53,5 +53,5 @@ def set_servo_position(pin, next_position, speed=70):
         time.sleep_ms(sleep)
 
 
-def move_servo_position(pin, angle):
-    set_servo(pin, _clamp(current_position(pin) + angle, 0, _max_angle(pin)))
+def move_servo_position(pin, angle, speed=70):
+    set_servo_position(pin, current_position(pin) + angle, speed)

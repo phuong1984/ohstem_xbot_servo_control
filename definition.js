@@ -61,41 +61,6 @@ Blockly.Python['configure_servo'] = function (block) {
   return 'configure_servo(' + pin + ', ' + maxAngle + ', ' + initialAngle + ')\n';
 };
 
-Blockly.Blocks['set_servo'] = {
-  init: function () {
-    this.jsonInit({
-      type: 'set_servo',
-      message0: Blockly.Msg.XBOT_SERVO_CONTROL_SET_SERVO_MESSAGE,
-      args0: [
-        {
-          type: 'field_dropdown',
-          name: 'pin',
-          options: SERVO_PINS,
-        },
-        {
-          type: 'input_value',
-          name: 'angle',
-          check: 'Number',
-        }
-      ],
-      inputsInline: true,
-      previousStatement: null,
-      nextStatement: null,
-      colour: ColorServo,
-      tooltip: Blockly.Msg.XBOT_SERVO_CONTROL_SET_SERVO_TOOLTIP,
-      helpUrl: ''
-    });
-  }
-};
-
-Blockly.Python['set_servo'] = function (block) {
-  servoDeclareImport();
-  var pin = block.getFieldValue('pin');
-  var angle = Blockly.Python.valueToCode(
-    block, 'angle', Blockly.Python.ORDER_ATOMIC);
-  return 'set_servo(' + pin + ', ' + angle + ')\n';
-};
-
 Blockly.Blocks['servo_position'] = {
   init: function () {
     this.jsonInit({
@@ -145,14 +110,19 @@ Blockly.Blocks['servo_move'] = {
       message0: Blockly.Msg.XBOT_SERVO_CONTROL_SERVO_MOVE_MESSAGE,
       args0: [
         {
+          type: 'field_dropdown',
+          name: 'pin',
+          options: SERVO_PINS,
+        },
+        {
           type: 'input_value',
           name: 'angle',
           check: 'Number',
         },
         {
-          type: 'field_dropdown',
-          name: 'pin',
-          options: SERVO_PINS,
+          type: 'input_value',
+          name: 'speed',
+          check: 'Number',
         }
       ],
       inputsInline: true,
@@ -170,7 +140,9 @@ Blockly.Python['servo_move'] = function (block) {
   var pin = block.getFieldValue('pin');
   var angle = Blockly.Python.valueToCode(
     block, 'angle', Blockly.Python.ORDER_ATOMIC);
-  return 'move_servo_position(' + pin + ', ' + angle + ')\n';
+  var speed = Blockly.Python.valueToCode(
+    block, 'speed', Blockly.Python.ORDER_ATOMIC);
+  return 'move_servo_position(' + pin + ', ' + angle + ', ' + speed + ')\n';
 };
 
 Blockly.Blocks['servo_current_position'] = {
